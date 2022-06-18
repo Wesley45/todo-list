@@ -1,0 +1,88 @@
+.headerContainer {
+  background: var(--gray-700);
+  height: 12.5rem;
+}
+
+.headerContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 46rem;
+  width: 100%;
+}
+
+.headerContent > img {
+  height: 3rem;
+  margin-top: 4.5rem;
+  width: 7.875rem;
+}
+
+.formNewTask {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 3.313rem;
+  width: 100%;
+}
+
+.formNewTask input {
+  align-items: center;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  display: flex;
+  flex: 1;
+  height: 3.375rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.formNewTask input:focus {
+  border: 1px solid var(--purple-dark);
+  color: var(--gray-100);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.formNewTask button {
+  align-items: center;
+  background: var(--blue-dark);
+  border: 0;
+  border-radius: 8px;
+  color: var(--gray-100);
+  cursor: pointer;
+  display: flex;
+  font-size: 0.875rem;
+  font-weight: 700;
+  gap: 8px;
+  height: 3.25rem;
+  justify-content: center;
+  line-height: 1.25rem;
+  padding: 1rem;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.formNewTask button:hover {
+  background: var(--blue);
+}
+
+.formNewTask button img {
+  height: 1rem;
+  width: 1rem;
+}
+
+@media (min-width: 768px) {
+  .formNewTask {
+    flex-direction: row;
+  }
+
+  .formNewTask button {
+    width: 5.625rem;
+  }
+}

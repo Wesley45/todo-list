@@ -1,0 +1,104 @@
+.taskContainer {
+  align-items: flex-start;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+
+.checkContainer {
+  display: block;
+  height: 1.5rem;
+  opacity: 0.9;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 1.5rem;
+}
+
+.checkContainer .checkmark {
+  background-color: transparent;
+  border: 2px solid #4ea8de;
+  border-radius: 50%;
+  bottom: 13.64%;
+  cursor: pointer;
+  height: 1.091rem;
+  left: 13.64%;
+  position: absolute;
+  right: 13.64%;
+  top: 13.64%;
+  transition: background-color 0.2s;
+  width: 1.091rem;
+}
+
+.checkContainer .checkmark:hover {
+  background-color: rgba(30, 111, 159, 0.2);
+}
+
+.checkContainer .checkmark:after {
+  border: 2px solid var(--gray-100);
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 0.293rem;
+  left: 2px;
+  opacity: 0;
+  position: absolute;
+  top: 2px;
+  transform: rotate(-45deg);
+  width: 0.457rem;
+}
+
+.checkContainer input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.checkContainer input[type="checkbox"]:checked + .checkmark {
+  background-color: var(--purple-dark);
+  border-color: var(--purple-dark);
+}
+
+.checkContainer input[type="checkbox"]:checked + .checkmark:after {
+  opacity: 1;
+}
+
+.checkContainer input[type="checkbox"]:checked .checkmark:hover {
+  background-color: var(--purple);
+}
+
+.taskText {
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.taskCompleted {
+  color: var(--gray-300);
+  text-decoration-line: line-through;
+}
+
+.taskContainer button {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  display: flex;
+  color: var(--gray-300);
+  height: 1.5rem;
+  justify-content: center;
+  transition: background-color 0.2s;
+  width: 1.5rem;
+}
+
+.taskContainer button:hover {
+  background: var(--gray-400);
+  color: var(--danger);
+}

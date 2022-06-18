@@ -1,0 +1,30 @@
+.tasksEmptyContainer {
+  align-items: center;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 4rem 1.5rem;
+}
+
+.tasksEmptyInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tasksEmptyInfo p,
+span {
+  color: var(--gray-300);
+  font-size: 1rem;
+
+  line-height: 1.375rem;
+  text-align: center;
+}
+
+.tasksEmptyInfo p {
+  font-weight: 700;
+}
